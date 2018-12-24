@@ -1,6 +1,6 @@
-# url to the problem
+# url: to the problem
 # https://leetcode.com/problems/reverse-string/
-
+# written by: hoangddt
 
 class Solution:
     def reverseString(self, s):
