@@ -48,7 +48,7 @@ $ git pull <remote-name> <branch-name>
 
 
 ## II. Clone a new repository
-Working with other
+Working with the others
 
 
 ```bash
@@ -59,5 +59,26 @@ Create new branch
 
 ```bash
 $ git branch <branch-name>
+# list all branch
 $ git branch -a
+```
+
+Switch branch
+```bash
+$ git checkout <branch-name>
+```
+
+## III. Reset to particular commit
+
+View commit log:
+
+```bash
+$ git log
+$ git log --oneline
+$ git log --oneline -20
+```
+
+Checkout to a history version
+```bash
+$ git reset --hard <commit-hash>
 ```

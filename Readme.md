@@ -1,7 +1,9 @@
 ## Member
 
-- Name 1
-- Name 2
+- Name 1 - leetcode link
+- Name 2 - leetcode link
+
+- Truong Van Quoc Hoang - [leetcode](https://leetcode.com/hoangddt/)
 
 ## Status
 
