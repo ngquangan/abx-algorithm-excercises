@@ -4,5 +4,11 @@
  * @return {boolean}
  */
 var isPowerOfFour = function(num) {
-    return parseInt(Math.log(num) / Math.log(4)) === Math.log(num) / Math.log(4);
+    let lg4 = parseInt(Math.log(num) / Math.log(4));
+    for(let i = lg4 - 1; i <= lg4; i++) {
+        if(Math.pow(4, i) === num) {
+            return true;
+        }
+    }
+    return false;
 };
