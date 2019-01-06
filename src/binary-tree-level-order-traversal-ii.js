@@ -13,11 +13,11 @@
 var levelOrderBottom = function(root) {
     if(!root) return [];
     let arr = [];
-    search(root, 1);
+    search(root, 0);
     function search(root, level) {
         if(!root) return;
-        if(arr.length < level) arr.push([]);
-        let arrLevel = arr[level - 1];
+        if(arr.length <= level) arr.push([]);
+        let arrLevel = arr[level];
         arrLevel.push(root.val);
         search(root.left, level + 1);
         search(root.right, level + 1);
