@@ -12,7 +12,7 @@ var MyQueue = function() {
  * @return {void}
  */
 MyQueue.prototype.push = function(x) {
-    this.Q.push(x);
+    this.Q.push(x)
 };
 
 /**
@@ -20,8 +20,14 @@ MyQueue.prototype.push = function(x) {
  * @return {number}
  */
 MyQueue.prototype.pop = function() {
-    let x = this.Q[0];
-    this.Q = this.Q.slice(1);
+    let temp = [];
+    while(this.Q.length !== 0) {
+        temp.push(this.Q.pop());
+    }
+    let x = temp.pop();
+    while(temp.length !== 0) {
+        this.Q.push(temp.pop());
+    }
     return x;
 };
 
