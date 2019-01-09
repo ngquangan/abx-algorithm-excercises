@@ -6,8 +6,7 @@
 var generate = function(numRows) {
     if(numRows ===0) return [];
     if(numRows === 1) return [[1]];
-    if(numRows === 2) return [[1],[1,1]];
-    
+   
     let arr = [[1],[1,1]];
     for(let i = 2; i < numRows; i++) {
         arr[i] = [1,1];
