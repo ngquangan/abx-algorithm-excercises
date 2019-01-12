@@ -4,5 +4,13 @@
  * @return {string}
  */
 var reverseString = function(s) {
-    return s.split("").reverse().join("");  
+    return reverse(s);  
 };
+
+let reverse = (s) => {
+    let temp = "";
+    for(let i = s.length - 1; i >= 0; i--) {
+        temp += s[i];
+    }
+    return temp;
+}
